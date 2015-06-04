@@ -6,7 +6,7 @@ lastValue=`cat $RELAY`
 while true; do
         newValue=`cat $RELAY`
         if [ "$lastValue" != "$newValue" ]; then
-                echo "Relay state change: $lastValue \> $newValue"
+                echo "Relay state change: $lastValue > $newValue"
 
                 if [ "$newValue" == "1" ]; then
                         # Switched On
