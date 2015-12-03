@@ -40,3 +40,11 @@ case "`cat $RELAY_CTRL`" in
     1) echo -n "ON"
     ;;
 esac
+
+
+#Example HomeAssistant config:
+#
+#switch:
+#  name: "Bedroom Light"
+#  platform: rest
+#  resource: http://192.168.1.80/cgi-bin/relay.cgi
